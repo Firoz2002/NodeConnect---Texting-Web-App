@@ -54,7 +54,7 @@ const LandingPage: FC = () => {
                     </div>
                     <div className="col">
                         <div className="row-lg">
-                            <img src="src/assets/img-1.png" alt="img-1" style={{ width: "250px", float: "right" }} />
+                            <img src="https://res.cloudinary.com/dhlsmeyw1/image/upload/v1735118667/NodeConnect%20assets/img-1_zee3n7.webp" alt="img-1" style={{ width: "250px", float: "right" }} />
                         </div>
                     </div>
 
