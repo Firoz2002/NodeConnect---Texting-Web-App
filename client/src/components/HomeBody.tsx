@@ -1,4 +1,5 @@
 import { useEffect, useState, FC } from "react";
+import { useNavigate} from 'react-router-dom';
 
 import '../App.css'
 import { User } from "../types/user";
@@ -9,6 +10,7 @@ interface HomeBodyProps {
 }
 
 const MessengerBody: FC<HomeBodyProps> = (props) => {
+    const navigate = useNavigate();
     const socket: any = props.socket;
 
     const [onlineUsers, setOnlineUsers] = useState<string[]>([]);
@@ -28,7 +30,7 @@ const MessengerBody: FC<HomeBodyProps> = (props) => {
                     <div className="user-contact" key={index}>
                         <img className="direct-chat-img" src={friend.profile} alt="user-profile-pic"/>
                         <span className={ (onlineUsers.some(user => user.toString() === friend.username)) ? "status active": undefined }></span>
-                        <span> <a href={`chats/${friend.username}`}> { friend.username } </a> </span>
+                        <span> <a onClick={() => navigate(`/chats/${friend.username}`)}> { friend.username } </a> </span>
                     </div>
                 ))
                 : null
