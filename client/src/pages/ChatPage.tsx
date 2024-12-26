@@ -28,7 +28,7 @@ const ChatRoom: FC = () => {
   }, []);
 
   return (
-    <div className="page-content page-container wrapper" id="page-content">
+    <div className="wrapper">
         <div className="box box-warning direct-chat direct-chat-warning">
           <ChatHeader numberOfMessages={numberOfMessages} />
           <ChatBody socket={socket} setNumberOfMessages={setNumberOfMessages} />

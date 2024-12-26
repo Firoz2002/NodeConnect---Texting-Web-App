@@ -47,11 +47,13 @@ const SignIn: FC<PopupProps> = ({ togglePopup }) => {
 
   return (
     <div className="signup-form popup">
-      <form className="popup-inner" onSubmit={formSubmitHandler} ref={popupRef}>
+      <form className="popup-inner rounded p-4 pb-0" onSubmit={formSubmitHandler} ref={popupRef}>
+        
         <div className="form-group">
           <label>Username</label>
           <input type="text" value={username} onChange={(e: ChangeEvent<HTMLInputElement>) => setUsername(e.target.value)} required/>
         </div>
+
         <div className="form-group">
           <label>Password </label>
           <input type="password" value={password} onChange={(e: ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)} required/>
@@ -61,7 +63,7 @@ const SignIn: FC<PopupProps> = ({ togglePopup }) => {
 
         <div className="form-group" style={{display:"inline-block"}}>
           <button type="submit">Sign Up</button>
-          <a href="#0">terms & conditions</a>
+          <span className="ms-2 text-muted text-decoration-dotted"> terms & conditions </span>
         </div>
       </form>
     </div>

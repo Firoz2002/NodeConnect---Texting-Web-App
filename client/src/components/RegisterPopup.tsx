@@ -73,7 +73,7 @@ const SignUp: FC<PopupProps> = ({ togglePopup }) => {
 
   return (
     <div className="signup-form popup rounded-3">
-      <form onSubmit={formSubmitHandler} className="popup-inner rounded-3" ref={popupRef}>
+      <form onSubmit={formSubmitHandler} className="popup-inner rounded-3 shadow p-4 pb-0" ref={popupRef}>
         <div className="profile-pictures">
           {
             pictures.map(picture => (
@@ -108,7 +108,7 @@ const SignUp: FC<PopupProps> = ({ togglePopup }) => {
 
         <div className="form-group" style={{display:"inline-block"}}>
             <button type="submit">Sign Up</button>
-            <a href="#0">terms & conditions</a>
+            <span className="ms-2 text-muted text-decoration-dotted" >terms & conditions</span>
         </div>
       </form>
     </div>

@@ -140,14 +140,13 @@ const FriendsPage: FC = () => {
     };
 
     return (
-        <div className="page-content page-container" id="page-content">
-            <div className="wrapper">
+        <div className="wrapper">
                 <div className="box box-warning direct-chat direct-chat-warning">
                     <header className="box-header with-border d-flex align-items-center">
                         <i className="fa-solid fa-arrow-right" style={{marginRight: "10px", rotate: "180deg", padding: "5px", cursor: "pointer"}} onClick={() => navigate(-1)}></i>
                         <h1 className="box-title " style={{marginRight: "auto"}}>Find Friends</h1>
 
-                        <form onSubmit={searchHandler} ref={popupRef}>
+                        <form className='d-flex search-bar' onSubmit={searchHandler} ref={popupRef}>
                             <input type="text" placeholder="Search for . . ." name="search" onChange={() => {}} className='rounded-3 border p-1'/>
                             <button type="submit">
                                 <i className="fa fa-search"></i>
@@ -236,7 +235,6 @@ const FriendsPage: FC = () => {
                         : null
                     }
                 </div>
-            </div>
         </div>
     );
 };

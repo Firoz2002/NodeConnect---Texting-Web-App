@@ -56,8 +56,7 @@ const MessengerHeader: FC<HomeHeaderProps> = ({ friends, logout, profile_picture
     return (
         <header className="wrapper">
             <div className="messenger-header d-flex box-header w-100">
-                {/* Remove this class */}
-                <button className="friend-requests" onClick={() => { return navigate('/find-friends') }}>
+                <button className="ms-2" onClick={() => { return navigate('/find-friends') }}>
                     <i className="fa-solid fa-user-plus fa-lg"></i>
                 </button>
 
@@ -86,7 +85,7 @@ const MessengerHeader: FC<HomeHeaderProps> = ({ friends, logout, profile_picture
                 <div className="w-100 p-3 pt-0" ref={userProfileRef}>
                     <div className="user-contact" key={searchedUser._id}>
                         <img className="direct-chat-img" src={searchedUser.profile} alt="user-profile-pic"/>
-                        <span> <a href={`chats/${searchedUser.username}`}> { searchedUser.username } </a> </span>
+                        <span onClick={() => navigate(`/chats/${searchedUser.username}`)}> { searchedUser.username } </span>
                     </div>
                 </div>
             : null

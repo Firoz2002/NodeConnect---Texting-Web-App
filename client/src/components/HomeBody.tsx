@@ -30,7 +30,7 @@ const MessengerBody: FC<HomeBodyProps> = (props) => {
                     <div className="user-contact" key={index}>
                         <img className="direct-chat-img" src={friend.profile} alt="user-profile-pic"/>
                         <span className={ (onlineUsers.some(user => user.toString() === friend.username)) ? "status active": undefined }></span>
-                        <span> <a onClick={() => navigate(`/chats/${friend.username}`)}> { friend.username } </a> </span>
+                        <span onClick={() => navigate(`/chats/${friend.username}`)}> { friend.username } </span>
                     </div>
                 ))
                 : null

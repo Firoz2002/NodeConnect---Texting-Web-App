@@ -59,14 +59,10 @@ const HomePage: FC = () => {
     }
 
     return (
-        <div className="page-content page-container" id="page-content">
-            <div>
-                <div className="wrapper">
-                    <div className="box box-warning direct-chat direct-chat-warning">
-                        <HomeHeader friends={friends} logout={logoutHandler} profile_picture={currentUser?.profile} />
-                        <HomeBody friends={friends} socket={socket} />
-                    </div>
-                </div>
+        <div className="wrapper">
+            <div className="box box-warning direct-chat direct-chat-warning">
+                <HomeHeader friends={friends} logout={logoutHandler} profile_picture={currentUser?.profile} />
+                <HomeBody friends={friends} socket={socket} />
             </div>
         </div>
     );

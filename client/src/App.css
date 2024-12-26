@@ -4,21 +4,9 @@ body {
   background: #f1f1f1 !important;
 }
 
-a {
-  color: black !important;
-  text-decoration: none !important;
-}
-
 button {
   border: none;
   background: none;
-}
-
-.heading {
-  margin: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .wrapper {
@@ -28,23 +16,10 @@ button {
   align-items: center;
 }
 
-.signin-form {
-height: 250px ;
-
-form {
-  margin-top: 20%;
-  border-radius: 5px;
-  box-shadow: 10px 10px 60px rgba(0, 0, 0, .4);
-  padding: 20px 20px 20px 20px;
-}
-}
-
 .signup-form form {
-border-radius: 5px;
-box-shadow: 10px 10px 60px rgba(0, 0, 0, .4);
-max-width: 450px;
-width: 80vw;
-padding: 20px 20px 20px 20px;
+  box-shadow: 10px 10px 60px rgba(0, 0, 0, .4);
+  max-width: 450px;
+  width: 80vw;
 }
 
 form .form-group {
@@ -63,21 +38,17 @@ span#characters {
   font-size: .8em;
   color: #8F949B;
 }
-
-a {
-  margin-left: 1rem;
-}
 }
 
 .form-group input[type="text"],
 .form-group input[type="email"], 
 .form-group input[type="password"] {
-border: none;
-outline: none;
-background: transparent;
-padding: 0 0 10px 0;
-font-size: 1em;
-border-bottom: 1px solid #8F949B;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0 0 10px 0;
+  font-size: 1em;
+  border-bottom: 1px solid #8F949B;
 }
 
 form .form-group:last-child {
@@ -91,17 +62,6 @@ button {
   font-weight: bold;
   letter-spacing: 1px;
   cursor: pointer;
-}
-
-button.active {
-  opacity: .5;
-  cursor: default;
-}
-
-a {
-  color: #8F949B;
-  text-decoration: dotted;
-  font-size: .8em;
 }
 }
 
@@ -181,8 +141,8 @@ position: relative;
 }
 
 .box-header:before, .box-body:before, .box-footer:before, .box-header:after, .box-body:after, .box-footer:after {
-content: " ";
-display: table;
+  content: " ";
+  display: table;
 }
 
 .box-header>.fa, .box-header>.glyphicon, .box-header>.ion, .box-header .box-title {
@@ -474,10 +434,6 @@ i {
 .messenger-header {
 margin: 1rem;
 
-.friend-requests {
-  margin: .5rem 0rem 0rem .5rem; 
-}
-
 .profile {
   border: 2px solid #444;
   background-color: #f1f1f1;
@@ -498,15 +454,15 @@ margin: 1rem;
 }
 
 .status {
-width: 8px;
-height: 8px;
-border: 2px solid rgb(48, 69, 96);
-border-radius: 50%;
-position: relative;
-left: -25px;
-top: -12px;
-transform: translate(40%, -40%);
-background-color: rgb(33, 34, 35);
+  width: 8px;
+  height: 8px;
+  border: 2px solid rgb(48, 69, 96);
+  border-radius: 50%;
+  position: relative;
+  left: -25px;
+  top: -12px;
+  transform: translate(40%, -40%);
+  background-color: rgb(33, 34, 35);
 }
 
 .active {
